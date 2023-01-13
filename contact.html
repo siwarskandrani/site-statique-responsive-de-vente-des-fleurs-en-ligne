@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="jquery.js"></script>
+            <title>Contact</title>
+    
+    </head>
+<body id="contact">
+    <header style="background-color: rgb(255, 224, 255)">
+
+        <div class="container-fluid">
+    
+            <div class="navb-logo">
+                <img src="images/flower.png" alt="Logo" width="200px">
+            </div>
+    
+            <div class="navb-items d-none d-xl-flex"> <!--lorsqu'oun va utiliser un petit ecran ce classe va disparaitre-->
+    
+                <div class="nav-item">
+                    <a href="index.html">Acceuil</a>
+                </div>
+    
+                <div class="nav-item">
+                    <a href="apropos.html">A propos</a>
+                </div>
+    
+                <div class="nav-item">
+                    <a href="produits.html">Produits</a>
+                </div>
+    
+                <div class="nav-item">
+                    <a href="Avis.html">Avis</a>
+                </div>
+    
+                <div class="nav-item">
+                  <a href="contact.html">Contact</a>
+              </div>
+            
+            </div>
+    
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-user"></a>
+             
+            </div>
+    
+            <!-- Button trigger modal -->
+            <div class="mobile-toggler d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--on a utilisé l'id de fa-bars(#navbModal) pour que lorsqu'on clique sur le fa-bars cette modal va apparaitre.-->
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="images/flower.png" alt="Logo">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+    
+                        <div class="modal-body">
+                            
+                            <div class="modal-line">
+                                <i class="fa-solid fa-house"></i><a href="index.html">Acceuil</a>
+                            </div>
+    
+                            <div class="modal-line">
+                                <i class="fa-solid fa-bell-concierge"></i><a href="apropos.html">A propos</a>
+                            </div>
+    
+                            <div class="modal-line">
+                                <i class="fa-solid fa-file-lines"></i> <a href="produits.html">Produits</a>
+                            </div>
+    
+                            <div class="modal-line">
+                                <i class="fa-solid fa-circle-info"></i><a href="Avis.html">Avis</a>
+                            </div>
+    
+                            <div class="modal-line">
+                              <i class="fa-solid fa-circle-info"></i><a href="contact.html">Contact</a>
+                          </div>
+    
+                        </div>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+
+<div class="container ">
+            <form action="#" style="font-weight: bold;">
+
+                <div class="row mt-5">
+            <div class="col-3  text-end">
+                <label for="pseudo" class="form-label stylelabel">Pseudonyme:</label>
+            </div>
+                <div class="col-6">
+                <input type="text" id="pseudo" name="nom"  class="form-control" pattern="^[a-zA-Z0-9]{8,}$" title="il faut saisir au moins 8 caractères Alphanumériques" required><!--required est l'oeil en cliquant sur elle on voit le mpt de passe.Lorsqu'on met required pour un champs,si on le laisse vide un message va apparaitre: veuillez remplir ce champ-->
+            </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3  text-end">
+                    <label for="mdp" class="form-label stylelabel" >Mot de passe: </label>
+                </div>
+                    <div class="col-6">
+                    <input type="password" id="mdp" name="mptdpas"  class="form-control" pattern="^[a-zA-Z0-9]{8,}$" title="il faut saisir au moins 8 caractères Alphanumériques" required>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3  text-end">
+                    <label for="Confirm" class="form-label stylelabel" >Confirmation: </label>
+                </div>
+                    <div class="col-6">
+                    <input type="password" id="Confirm" name="confirm"  class="form-control" required> 
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-3 text-end">
+                    <label for="Message" class="form-label stylelabel">Message:</label>
+                </div>
+                <div class="col-6">
+                    <textarea  id="Message" name="msg" cols="15" rows="5" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="row mt-5" >
+                <div class="offset-3">
+                           <input type="submit" value="envoyer" id="submit" class="btn btn-primary" >
+                           <input type="reset" value="rafraichir" id ="refresh" class="btn btn-success">
+                    </div>
+                </div>
+            </form>
+            <div id="msg" class="couleur mt-5" ></div>
+        <hr class="mt-2">
+        <div class="text-center"> Copyright &copy; 2022 </div>
+    </div>
+         
+</body>

@@ -1,0 +1,258 @@
+
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  }
+
+  header{
+    /*important: si vous allez faire un modal a partir d'un bouton qui appartient au header c'est interdit de mettre: position:fixed ==> ça bloque le modal*/
+    position: relative;
+    
+       width: 100vw;
+    height: 120px;
+    background:transparent;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+}
+   
+
+header .container-fluid{
+
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:992px){
+
+    header .container-fluid{
+
+        padding: 0 5%;
+    }
+}
+
+.nav-item a{
+  color:black;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-size: 25px;
+  
+}
+.nav-item a:hover{
+  color:white;
+}
+
+  .icons{
+    text-align: right;
+    margin-left: 4cm;
+  }
+  .icons .fas{
+    color:black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 10px;
+    transition: 0.6s; /*de la hover*/
+    
+  }
+  .fas:hover{
+    color: white; /*lorsqu'on pointe sir l'icon la couleur se change de blanc en noir*/
+  }
+
+  header .mobile-toggler{
+
+    font-size: 30px;
+
+}
+header .mobile-toggler .fas{
+  color: black;
+}
+header .mobile-toggler .fas:hover{
+  color: white;
+}
+
+.modal-dialog{
+
+  margin: 0;
+  width: 430px;
+}
+
+@media(max-width: 450px){
+
+  .modal-dialog{
+
+      width: 82%;
+  }
+}
+
+.modal-content{
+
+  border-radius: 0;
+  height: 100vh;
+  overflow-y: scroll; /* tu peux monter et descendre*/
+  background-color:black;
+}
+
+
+.modal-header img{
+
+  width: 140px;
+  height: 66px;
+  margin-top: 17.5px;
+}
+
+.modal-header .btn-close{
+
+  background: transparent;
+  opacity: 1;
+}
+
+.modal-header i{
+
+  color: #fefefe;
+  font-size: 30px;
+}
+
+.modal-body{
+
+  width: 88%;
+  margin: 0 auto;
+  padding: 75px 0 0 0;
+  flex: unset;
+}
+
+.modal-body .modal-line{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 7px 0;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: all .5s ease;
+  color:rgb(255, 224, 255);
+  border-bottom: 1px solid rgb(255, 224, 255);
+}
+
+.modal-body .modal-line:hover{
+
+  color: #fefefe;
+  border-bottom: 1px solid #fefefe;
+}
+
+.modal-line a{
+
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #fefefe;
+}
+
+.modal-line i{
+
+  color: currentColor;
+  font-size: 30px;
+  width: 35px;
+  margin-right: 15px;
+  padding: 0 0 3px 3px;
+}
+
+
+#acceuil{
+  background:url(images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ #home{
+      display: flex;
+      align-items: center;
+      min-height: 85.2vh; /* vous permet d'augmente et de reduire l'espace remplie de classe.*/
+           }
+
+    #home #content{
+      max-width: 50rem;
+      align-items: center;
+      margin-left: 3cm;
+    }
+ #content h1{
+     
+      color:#333;
+      font-weight: bolder;
+  }
+   
+   #content p{
+      font-size: 1.5rem;
+      color:#999;
+    margin-top: 20px;
+      line-height: 1.5;
+        }
+   #home .btn{
+          display: inline-block;
+          margin-top: 2rem;
+          border-radius: 5rem;
+          background:rgb(15, 119, 20);
+          color:#fff;
+          padding:.9rem 3.5rem; /* Le grandeur de boutton */
+          cursor: pointer;
+          font-size: 1.7rem;
+      }
+
+
+      #about{
+        margin-top: 2.5cm;
+      }
+
+      video{
+        width:100%;
+        border:1.5rem solid #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        height: 100%;
+        object-fit: cover;}
+        
+       
+      .img-container{
+        position: relative;
+      }
+      .img-container .image{
+        transition: .5s ease ;
+        backface-visibility: hidden;
+      
+      }
+      
+      .overlay{
+        transition: .5s ease ;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      
+      .img-container:hover .image{
+        opacity: 0.2;
+      }
+      .img-container:hover .overlay{
+        opacity: 1;
+      }
+    .fa-star {
+      font-size:36px; 
+    }
+    #contact{
+ 
+     
+    background-color:rgb(255, 243, 243);
+
+     
+    }
+    .couleur{   /* de fichier js (confirmation et son input)*/
+      color:red; 
+  }
+
+ 

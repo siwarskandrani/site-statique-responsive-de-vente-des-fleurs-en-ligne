@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>Acceuil</title>
+
+</head>
+<body id="acceuil">
+
+
+  <header>
+
+    <div class="container-fluid">
+
+        <div class="navb-logo">
+            <img src="images/flower.png" alt="Logo" width="200px">
+        </div>
+
+        <div class="navb-items d-none d-xl-flex"> <!--lorsqu'on va utiliser un petit ecran ce classe va disparaitre-->
+
+            <div class="nav-item">
+                <a href="#">Acceuil</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="apropos.html">A propos</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="produits.html">Produits</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Avis.html">Avis</a>
+            </div>
+
+            <div class="nav-item">
+              <a href="contact.html">Contact</a>
+          </div>
+        
+        </div>
+
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-user"></a>
+         
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="mobile-toggler d-lg-none">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                <i class="fas fa-bars" ></i>
+            </a>
+        </div>
+    
+
+        <!-- Modal -->
+        <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--on a utilisé l'id de fa-bars(#navbModal) pour que lorsqu'on clique sur le fa-bars cette modal va apparaitre.-->
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/flower.png" alt="Logo">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        
+                        <div class="modal-line">
+                            <i class="fa-solid fa-house"></i><a href="#">Acceuil</a>
+                        </div>
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-bell-concierge"></i><a href="apropos.html">A propos</a>
+                        </div>
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-file-lines"></i> <a href="produits.html">Produits</a>
+                        </div>
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-circle-info"></i><a href="Avis.html">Avis</a>
+                        </div>
+
+                        <div class="modal-line">
+                          <i class="fa-solid fa-circle-info"></i><a href="contact.html">Contact</a>
+                      </div>
+
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</header>
+
+
+
+ <div id="home" class="container-fluid">
+
+  <div class="row mb-5 mt-3">
+    <div class="col md-6" id="content" style="text-align: justify; ">
+    <h1>LE PARADIS DES FLEURS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum ut minus corrupti dolorum dolore assumenda iste voluptate dolorem pariatur.</p>
+    <a href="#" class="btn">shop now</a>
+    </div>
+  </div>
+
+  
+
+
+
+ </div>
+ 
+</body>
+</html>
